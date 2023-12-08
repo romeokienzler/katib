@@ -3,7 +3,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: leader-election
-  namespace: kubeflow
+  namespace: katib
 rules:
   - apiGroups:
       - coordination.k8s.io
@@ -16,7 +16,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: leader-election
-  namespace: kubeflow
+  namespace: katib
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -24,4 +24,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: katib-controller
-    namespace: kubeflow
+    namespace: katib

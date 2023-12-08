@@ -11,7 +11,7 @@
 ---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: kubeflow
+namespace: katib
 resources:
   # Namespace.
   - ../../components/namespace/
@@ -46,7 +46,7 @@ patchesJson6902:
       version: v1
       kind: Service
       name: katib-controller
-      namespace: kubeflow
+      namespace: katib
     path: patches/service-serving-cert.yaml
   # Annotate WebhookConfigurations to delegate `caBundle` population to OpenShift service controller
   # https://docs.openshift.com/container-platform/4.6/security/certificates/service-serving-certificate.html#add-service-certificate-mutating-webhook_service-serving-certificate
