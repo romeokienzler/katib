@@ -4,7 +4,7 @@
 apiVersion: kubeflow.org/v1beta1
 kind: Experiment
 metadata:
-  namespace: kubeflow
+  namespace: katib
   name: custom-metrics-collector
 spec:
   objective:

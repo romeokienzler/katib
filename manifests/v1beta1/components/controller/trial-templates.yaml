@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: trial-templates
-  namespace: kubeflow
+  namespace: katib
   labels:
     katib.kubeflow.org/component: trial-templates
 data:

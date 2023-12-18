@@ -36,7 +36,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: katib-ui
-  namespace: kubeflow
+  namespace: katib
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
@@ -49,4 +49,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: katib-ui
-    namespace: kubeflow
+    namespace: katib

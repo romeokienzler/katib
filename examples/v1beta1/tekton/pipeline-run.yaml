@@ -9,7 +9,7 @@
 apiVersion: kubeflow.org/v1beta1
 kind: Experiment
 metadata:
-  namespace: kubeflow
+  namespace: katib
   name: tekton-pipeline-run
 spec:
   objective:

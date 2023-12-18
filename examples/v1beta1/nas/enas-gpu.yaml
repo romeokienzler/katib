@@ -8,7 +8,7 @@
 apiVersion: kubeflow.org/v1beta1
 kind: Experiment
 metadata:
-  namespace: kubeflow
+  namespace: katib
   name: enas-gpu
 spec:
   parallelTrialCount: 3

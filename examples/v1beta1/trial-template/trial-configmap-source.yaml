@@ -2,7 +2,7 @@
 apiVersion: kubeflow.org/v1beta1
 kind: Experiment
 metadata:
-  namespace: kubeflow
+  namespace: katib
   name: trial-configmap-source
 spec:
   objective:
@@ -50,5 +50,5 @@ spec:
         reference: optimizer
     configMap:
       configMapName: trial-templates
-      configMapNamespace: kubeflow
+      configMapNamespace: katib
       templatePath: defaultTrialTemplate.yaml

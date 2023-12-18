@@ -11,7 +11,7 @@
 apiVersion: kubeflow.org/v1beta1
 kind: Experiment
 metadata:
-  namespace: kubeflow
+  namespace: katib
   name: enas-cpu
 spec:
   parallelTrialCount: 2

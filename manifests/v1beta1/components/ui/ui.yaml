@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: katib-ui
-  namespace: kubeflow
+  namespace: katib
   labels:
     katib.kubeflow.org/component: ui
 spec:

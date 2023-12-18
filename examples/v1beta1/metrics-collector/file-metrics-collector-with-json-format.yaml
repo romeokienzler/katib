@@ -2,7 +2,7 @@
 apiVersion: kubeflow.org/v1beta1
 kind: Experiment
 metadata:
-  namespace: kubeflow
+  namespace: katib
   name: file-metrics-collector-with-json-format
 spec:
   objective:

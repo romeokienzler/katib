@@ -3,7 +3,7 @@ apiVersion: kubeflow.org/v1beta1
 kind: Experiment
 metadata:
   name: xgb-svhn-fpga
-  namespace: kubeflow
+  namespace: katib
 spec:
   algorithm:
     algorithmName: random

@@ -12,7 +12,7 @@ webhooks:
       caBundle: Cg==
       service:
         name: katib-controller
-        namespace: kubeflow
+        namespace: katib
         path: /validate-experiment
     rules:
       - apiGroups:
@@ -38,7 +38,7 @@ webhooks:
       caBundle: Cg==
       service:
         name: katib-controller
-        namespace: kubeflow
+        namespace: katib
         path: /mutate-experiment
     rules:
       - apiGroups:
@@ -58,7 +58,7 @@ webhooks:
       caBundle: Cg==
       service:
         name: katib-controller
-        namespace: kubeflow
+        namespace: katib
         path: /mutate-pod
     namespaceSelector:
       matchLabels:
